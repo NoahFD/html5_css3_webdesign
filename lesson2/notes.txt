@@ -28,3 +28,22 @@ article p:first-child
 
 this might not works well, as this is not looking at p first child but
 looking for article first child which need to be p, else nothing will happen
+
+
+* is for all selector and is useful for not selector which css can be propagated.
+
+
+content,border,padding,margin
+content + padding + border = final width /height
+
+padding: 20px 40px; top & bottom , left & right
+
+because certain element already have the margin on certain selector. it will be good to perform global reset.
+via *
+
+
+	•	Display value: block, flex, grid, table, etc.
+	•	Behavior:
+	•	Starts on a new line.
+	•	Expands to fill the width of its parent container.
+	•	You can set width/height/padding/margin/border.
