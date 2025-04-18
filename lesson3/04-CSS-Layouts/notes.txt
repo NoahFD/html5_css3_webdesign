@@ -1,0 +1,208 @@
+float, flex , grid
+
+float : seem like remove from the html. so if you have a parent which inside children all float, the height will be 0.
+
+flex box to define 1-Dimensional layout.
+
+flex container
+display:flex
+then direct chilren -> flex
+
+--> main axis
+| cross axis
+
+gap
+justify-content
+align-items
+
+align-self
+flex-grow
+flex-shrink
+flex-basis
+flex
+order
+
+flex box is allowed to shrink element
+
+Sure! Here’s a short and clear Flexbox cheat sheet in plain text:
+
+⸻
+
+🔧 flex Short Hand = flex-grow flex-shrink flex-basis
+
+⸻
+
+✅ flex-grow
+	•	Controls how much an item can grow
+	•	0 = don’t grow (default)
+	•	1 = grow to fill available space (relative to others)
+
+⸻
+
+✅ flex-shrink
+	•	Controls how much an item can shrink
+	•	1 = shrink if needed (default)
+	•	0 = don’t shrink
+
+⸻
+
+✅ flex-basis
+	•	The starting size before grow/shrink
+	•	auto = use content size
+	•	0 = ignore content size, start from 0
+	•	Can also be 100px, 20%, etc.
+
+⸻
+
+📦 Example
+
+flex: 1;
+
+=
+
+flex-grow: 1;
+flex-shrink: 1;
+flex-basis: 0;
+
+“Start at 0, grow equally, shrink if needed.”
+
+⸻
+
+Let me know if you want a visual one next!
+
+Absolutely! Here’s a super simple cheat sheet for how CSS Grid lines work — in plain text:
+
+⸻
+
+🧱 CSS Grid Line Numbering Notes
+
+⸻
+
+✅ What are Grid Lines?
+	•	Grid lines are the invisible lines that form the boundaries of grid cells.
+	•	They are numbered starting from 1.
+
+⸻
+
+✅ How lines relate to rows & columns:
+
+Rows or Columns	Line Count = One More
+2 rows	3 horizontal lines
+3 columns	4 vertical lines
+N rows	N + 1 lines
+
+
+
+⸻
+
+📏 Example: 3 Columns
+
+Line   Line   Line   Line
+ 1  ┃  2  ┃  3  ┃  4
+    ┃     ┃     ┃
+    ┃     ┃     ┃
+
+You get:
+	•	3 columns
+	•	4 vertical lines (1 to 4)
+
+⸻
+
+📏 Example: 2 Rows
+
+Line 1 ——————
+         row 1
+Line 2 ——————
+         row 2
+Line 3 ——————
+
+You get:
+	•	2 rows
+	•	3 horizontal lines (1 to 3)
+
+⸻
+
+✅ Using Lines in Code
+
+grid-column: 1 / 3; /* spans from line 1 to line 3 = 2 columns wide */
+grid-row: 2 / 4;     /* spans from line 2 to line 4 = 2 rows tall */
+
+
+
+⸻
+
+🧠 Tip to Remember
+
+If you have N rows or columns, you always get N + 1 grid lines.
+
+⸻
+
+Let me know if you want a grid drawing or visual version!
+
+
+Absolutely! Here’s a clean, short, and easy-to-understand text note on those CSS Grid alignment properties:
+
+⸻
+
+📦 CSS Grid Alignment – Quick Notes
+
+⸻
+
+🏠 In Container (Grid Parent)
+
+These control how the whole grid is positioned inside the container.
+
+✅ justify-content
+	•	Aligns the grid as a whole horizontally
+	•	Options: start, end, center, space-between, space-around, etc.
+
+justify-content: center; /* Center grid horizontally */
+
+
+
+⸻
+
+✅ align-content
+	•	Aligns the grid as a whole vertically
+	•	Only works if there is extra height
+	•	Options: start, end, center, space-between, etc.
+
+align-content: center; /* Center grid vertically */
+
+
+
+⸻
+
+🔲 In Cells (Grid Items)
+
+These control how each individual cell’s content is aligned inside its grid area.
+
+✅ justify-items
+	•	Aligns item’s content horizontally
+	•	Options: start, end, center, stretch
+
+justify-items: center; /* Center content horizontally inside each cell */
+
+
+
+⸻
+
+✅ align-items
+	•	Aligns item’s content vertically
+	•	Options: start, end, center, stretch
+
+align-items: center; /* Center content vertically inside each cell */
+
+
+
+⸻
+
+🎯 Tip to Remember
+	•	justify-* → horizontal
+	•	align-* → vertical
+	•	*-content → for grid as a whole
+	•	*-items → for each cell’s content
+
+⸻
+
+Let me know if you want visual diagrams too!
